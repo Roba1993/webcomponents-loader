@@ -1,5 +1,5 @@
-# webcomponents-loader [![NPM version][npm-image]][npm-url]
-[![NPM][nodei-image]][nodei-url]
+# webcomponents-loader [![npm version](https://badge.fury.io/js/webcomponents-loader.svg)](https://badge.fury.io/js/webcomponents-loader)
+[![NPM](https://nodei.co/npm/webcomponents-loader.png)](https://nodei.co/npm/webcomponents-loader/)
 Webpack loader for webcomponents. When you want to load webcomponents directly with webpack and package them together, you can take this loader. Simply load any `.html` file with 'require' or 'import'.
 
 Actual supported features:
