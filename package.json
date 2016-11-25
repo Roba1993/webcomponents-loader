@@ -1,0 +1,25 @@
+{
+  "name": "webcomponents-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader for webcomponents",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roba1993/webcomponents-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "webcomponents",
+    "loader"
+  ],
+  "author": "Robert Schütte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Roba1993/webcomponents-loader/issues"
+  },
+  "homepage": "https://github.com/Roba1993/webcomponents-loader#readme",
+
+  "dependencies": {
+    "cheerio": "^0.22.0",
+  }
+}
