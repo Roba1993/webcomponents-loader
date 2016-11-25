@@ -1,6 +1,6 @@
 {
   "name": "webcomponents-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack loader for webcomponents",
   "main": "index.js",
   "repository": {
@@ -18,7 +18,6 @@
     "url": "https://github.com/Roba1993/webcomponents-loader/issues"
   },
   "homepage": "https://github.com/Roba1993/webcomponents-loader#readme",
-
   "dependencies": {
     "cheerio": "^0.22.0"
   }
