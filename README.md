@@ -1,4 +1,5 @@
-# webcomponents-loader
+# webcomponents-loader [![NPM version][npm-image]][npm-url]
+[![NPM][nodei-image]][nodei-url]
 Webpack loader for webcomponents. When you want to load webcomponents directly with webpack and package them together, you can take this loader. Simply load any `.html` file with 'require' or 'import'.
 
 Actual supported features:
@@ -8,6 +9,9 @@ Actual supported features:
 * Included javascript will be automatically executed on import
 
 ## How to use
+Install the webcomponents-loader with the following command:
+`npm install webcomponents-loader --save-dev`
+
 Configure the loader in the `webpack.config.js` as following:
 ```javascript
 module.exports = {
@@ -17,7 +21,7 @@ module.exports = {
           // html loader
           {
             test: /\.html$/,
-            loader: path.join(__dirname, "webcomponents-loader.js"),
+            loader: 'webcomponents-loader',
             query: {
               // optinal parameter to use babel
               babel: {
@@ -47,3 +51,6 @@ The `document.currentScript` and `document._currentScript` is nor working correc
 
 ## Contribution
 Feel free to submit any bugfix or additional feature. If it's good documented and adds value i will accept your request.
+
+## License
+MIT (http://www.opensource.org/licenses/mit-license.php)

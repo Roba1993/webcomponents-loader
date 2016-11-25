@@ -1,0 +1,41 @@
+<template>
+  <style>
+    :host {
+      display: block;
+      font-size: 20px;
+    }
+
+    .highlight {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+      color: white;
+    }
+  </style>
+  Hello
+  <div class="highlight">World</div>
+</template>
+<script>
+class Component extends HTMLElement {
+
+  // get called when element is created
+  createdCallback() {
+
+    var root = this.createShadowRoot();
+    var template = currentWebcomponent.querySelector('template');
+    var clone = document.importNode(template.content, true);
+    root.appendChild(clone);
+  }
+
+  // get called when element is attached to the DOM
+  attachedCallback() {}
+
+  // get called when element is detached from the DOM
+  detachedCallback() {}
+
+  // get called when attributes are changing
+  attributeChangedCallback() {}
+}
+
+document.registerElement('my-component', Component);
+</script>
