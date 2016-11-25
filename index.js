@@ -1,6 +1,9 @@
 let cheerio = require('cheerio');
 
 module.exports = function(content) {
+  // flag as cachable
+  this.cacheable();
+
   // get the query (settings) as object
   var query = JSON.parse(this.query.substr(1));
 
